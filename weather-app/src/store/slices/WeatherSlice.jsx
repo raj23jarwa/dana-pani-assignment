@@ -1,9 +1,8 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-import { appId,hostName } from "../../config/config";
 // Example usage
-// const apiKey = import.meta.env.VITE_API;
-// const host = import.meta.env.VITE_HOST;
+const apiKey = import.meta.env.VITE_API;
+const host = import.meta.env.VITE_HOST;
 
 // console.log('API Key:', apiKey);
 // console.log('Host:', host);
@@ -12,7 +11,7 @@ import { appId,hostName } from "../../config/config";
 export const getCityData = createAsyncThunk("city", async (obj) => {
   try {
     const request = await axios.get(
-      `${hostName}/data/2.5/weather?q=${obj.city}&units=${obj.unit}&APPID=${appId}`
+      `${host}/data/2.5/weather?q=${obj.city}&units=${obj.unit}&APPID=${apiKey}`
     );
     const response = await request.data;
     return {
@@ -30,7 +29,7 @@ export const getCityData = createAsyncThunk("city", async (obj) => {
 // get 5 days forecast of the provided city
 export const get5DaysForecast = createAsyncThunk("5days", async (obj) => {
   const request = await axios.get(
-    `${hostName}/data/2.5/forecast?lat=${obj.lat}&lon=${obj.lon}&units=${obj.unit}&APPID=${appId}`
+    `${host}/data/2.5/forecast?lat=${obj.lat}&lon=${obj.lon}&units=${obj.unit}&APPID=${apiKey}`
   );
   const response = await request.data;
   return response;
