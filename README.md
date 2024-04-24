@@ -1,11 +1,54 @@
-First step:
-clone the repository by git command:
-git clone https://github.com/raj23jarwa/digital-paani-assignment.git
-second step:
-open the project in vs code and then change directory by cd ./weather-app
-Third step:
-run this command:npm install
-fourth step:
-Run this command:npm run dev
 
-fifth step: open the link that is generated in your terminal which will look like this (localhost:5173/)
+# Weather App
+
+Interactive weather dashboard application using
+React. The application include the following features:
+
+    A search function to find current weather information by city name.
+    Display current weather details like temperature, humidity, and wind speed.
+
+## Acknowledgements
+
+ - [React js](https://react.dev/)
+ - [Redux Toolkit](https://redux-toolkit.js.org/)
+ - [React Icons kit](https://react-icons-kit.vercel.app/)
+
+
+ 
+
+
+## API Reference
+
+
+```http
+  https://openweathermap.org/api
+```
+
+
+
+
+## Author
+
+- [Rajkumar SIngh](https://github.com/raj23jarwa)
+
+
+
+
+## Installation
+
+Install weather-app with npm
+
+```bash
+  cd weather-app
+  npm install 
+```
+```bash
+  npm run dev 
+```
+```bash
+  http://localhost:5173/
+```
+    
+## Demo
+
+https://drive.google.com/drive/u/0/home
