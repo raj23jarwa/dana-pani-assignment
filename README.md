@@ -51,4 +51,4 @@ Install weather-app with npm
     
 ## Demo
 
-https://drive.google.com/drive/u/0/home
+https://drive.google.com/file/d/1rdghRfhr9uttvIkqZptSXMg6io2xr9m2/view?usp=drive_link
